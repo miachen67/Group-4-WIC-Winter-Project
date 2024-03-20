@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background: url("beach.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+audio {
+    opacity: 60%;
+    width: 15%;
+}
