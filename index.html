@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- link to the play icon-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         
         <!-- Title of the page -->
         <title>I Miss The Beach</title>
@@ -32,49 +33,69 @@
 
                 <!--Waves-->
                 <div class="waves">
-                    <h4 class="sound-headers">Waves</h4>
+                    <span class = "playPause">
+                        <h4 class="sound-headers">Waves</h4>
+                        <button id="button-waves" class="pausePlayButton">&#9658;</button>
+                    </span>
 
                     <span class="sound-input">
-                    <button id="button-waves" class="pausePlayButton">&#9658;</button>
-                    <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                    id="volume-waves">
-                    <audio class= "audio" id="play-waves" loop src="oceanWaves.mp3"></audio>
+                        <span class="material-symbols-outlined">
+                            volume_up
+                        </span>
+                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                        id="volume-waves">
+                        <audio class= "audio" id="play-waves" loop src="oceanWaves.mp3"></audio>
                     </span>
                 </div>
                 
                 <!--Wind-->
                 <div class="wind">
-                    <h4 class="sound-headers">Wind</h4>
+                    <span class="playPause">
+                        <h4 class="sound-headers">Wind</h4>
+                        <button id="button-wind" class="pausePlayButton">&#9658;</button>
+                    </span>
 
                     <span class="sound-input">
-                    <button id="button-wind" class="pausePlayButton">&#9658;</button>
-                    <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                    id="volume-wind">
-                    <audio class= "audio" id="play-wind" loop src="Wind.mp3"></audio>
+                        <span class="material-symbols-outlined">
+                            volume_up
+                        </span>
+                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                        id="volume-wind">
+                        <audio class= "audio" id="play-wind" loop src="Wind.mp3"></audio>
                     </span>
                 </div>
                 
                 <!--Seagull-->
                 <div class="seagulls">
-                    <h4 class="sound-headers">Seagulls</h4>
+                    <span class="playPause">
+                        <h4 class="sound-headers">Seagulls</h4>
+                        <button id="button-seagull" class="pausePlayButton">&#9658;</button>
+                    </span>
 
-                    <span class="sound-input">
-                    <button id="button-seagull" class="pausePlayButton">&#9658;</button>
-                    <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                    id="volume-seagull">
-                    <audio class= "audio" id="play-seagull" loop src="seagulls.mp3"></audio>
+                    <span class="sound-input"> 
+                        <span class="material-symbols-outlined">
+                            volume_up
+                        </span>
+                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                        id="volume-seagull">
+                        <audio class= "audio" id="play-seagull" loop src="seagulls.mp3"></audio>
                     </span>
                 </div>
                 
                 <!--People-->
                 <div class="people">
-                    <h4 class="sound-headers">Talking/Playing</h4>
-
+                    <span class="playPause">
+                        <h4 class="sound-headers">Voices</h4>
+                        <button id="button-people" class="pausePlayButton">&#9658;</button>
+                    </span>
+                    
                     <span class="sound-input">
-                    <button id="button-people" class="pausePlayButton">&#9658;</button>
-                    <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                    id="volume-people">
-                    <audio class= "audio" id="play-people" loop src="children-playing.mp3"></audio>
+                        <span class="material-symbols-outlined">
+                            volume_up
+                        </span>
+                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                        id="volume-people">
+                        <audio class= "audio" id="play-people" loop src="children-playing.mp3"></audio>
                     </span>
                 </div>
         </div>

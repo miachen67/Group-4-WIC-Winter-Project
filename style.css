@@ -12,6 +12,26 @@ header {
     font-size: large;
 }
 
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+.playPause{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
 .soundSection{
     display: flex;
     flex-direction: column;
@@ -32,7 +52,7 @@ header {
 
 .volume-slider{
     -webkit-appearance: none;
-    width: 150px;
+    width: 200px;
     height: 2px;
     background: black;
     border-radius: 5px;
@@ -51,4 +71,7 @@ header {
 
 .sound-input {
     text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
