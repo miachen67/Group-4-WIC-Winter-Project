@@ -22,4 +22,6 @@ for (let i = 0; i < buttons.length; i++) {
     volumes[i].addEventListener("input", () => {
         audios[i].volume = volumes[i].value;
     });
-  }
+}
+
+
