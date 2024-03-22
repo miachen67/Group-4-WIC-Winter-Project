@@ -23,7 +23,8 @@ for (let i = 0; i < buttons.length; i++) {
     volumes[i].addEventListener("input", () => {
         audios[i].volume = volumes[i].value;
     });
-
+    
+    // mute or unmute audio
     mute[i].addEventListener("click", () => {
       audios[i].muted = !audios[i].muted;
       if (audios[i].muted == true){
