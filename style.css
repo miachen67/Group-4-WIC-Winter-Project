@@ -12,6 +12,16 @@ header {
     font-size: large;
 }
 
+.soundSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-top: 10vh;
+    gap: 5vh;
+}
+
 .sound-headers {
     position: relative;
     margin: 0px;
