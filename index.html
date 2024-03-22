@@ -4,7 +4,7 @@
     <head>
         <!-- Meta tags for character set, description, and viewport settings -->
         <meta charset="UTF-8">
-        <meta name="description" content="Welcome to the cozy world of I Miss My Cafe.">
+        <meta name="description" content="Welcome to the relaxing experience of I Miss The Beach.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- link to the play icon-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
@@ -14,59 +14,63 @@
         
         <!-- Link to external stylesheet -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
     </head>
+
     <body>
         <header>
             <!-- Heading 1 for main title -->
             <h1>I Miss The Beach</h1>
+
         </header>
         <div class="soundSection">
-            <div>
-                <span>
-                    <h4>Waves</h4>
-                    <button type="button">
-                        <span class="material-symbols-outlined">play_arrow
-                        </span>
-                    </button>
-                </span>
-
-                <span>
-                    <input type="range" min="1" max="100" value="50" step="1">
-                </span>
-                <audio controls loop>
-                    <source src="oceanWaves.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-                
-                <!-- Audio for the wind sound effect -->
-                <h4>Wind</h4>
-                <audio controls loop>
-                    <source src="Wind.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-
-                <!-- Audio for the seagull sound effect -->
-                <h4>Seagulls</h4>
-                <audio controls loop>
-                    <source src="seagulls.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-
-                <!-- Audio for the children sound effect -->
-                <h4>Kids Playing</h4>
-                <audio controls loop>
-                    <source src="children-playing.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-
-                <!-- Image of the beach PLACEHOLDER (feel free to modify it)-->
+                <!-- Image of the beach PLACEHOLDER (feel free to modify it)
                 <figure>
-                    <img src="Beach.png" alt="A picture of a beach" width="500">
-                    <figcaption>Welcome to the beach.</figcaption>
-                </figure>
-            </div>
+                    <img src="beach.jpeg" alt="A picture of a beach" width="500">
+                    <figcaption>Immerse yourself in relaxation.</figcaption>
+                </figure> -->
+
+                <!--Waves-->
+                <h4 class="sound-headers">Waves</h4>
+
+                <span class="sound-input">
+                <button id="button-waves" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-waves">
+                <audio class= "audio" id="play-waves" loop src="oceanWaves.mp3"></audio>
+                </span>
+                
+                <!--Wind-->
+                <h4 class="sound-headers">Wind</h4>
+
+                <span class="sound-input">
+                <button id="button-wind" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-wind">
+                <audio class= "audio" id="play-wind" loop src="Wind.mp3"></audio>
+                </span>
+
+                <!--Seagull-->
+                <h4 class="sound-headers">Seagulls</h4>
+
+                <span class="sound-input">
+                <button id="button-seagull" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-seagull">
+                <audio class= "audio" id="play-seagull" loop src="seagulls.mp3"></audio>
+                </span>
+
+                <!--People-->
+                <h4 class="sound-headers">Talking/Playing</h4>
+
+                <span class="sound-input">
+                <button id="button-people" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-people">
+                <audio class= "audio" id="play-people" loop src="children-playing.mp3"></audio>
+                </span>
         </div>
 
-
+        <script src="script.js"></script>
     </body>
 </html>
