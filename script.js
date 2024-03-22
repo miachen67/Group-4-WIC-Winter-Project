@@ -4,6 +4,7 @@ const pauseSymbol = '\u275A\u275A';
 const buttons = document.getElementsByClassName("pausePlayButton");
 const audios = document.getElementsByClassName("audio");
 const volumes = document.getElementsByClassName("volume-slider");
+const mute = document.getElementsByClassName("mute");
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", () => {
@@ -22,6 +23,13 @@ for (let i = 0; i < buttons.length; i++) {
     volumes[i].addEventListener("input", () => {
         audios[i].volume = volumes[i].value;
     });
+
+    mute[i].addEventListener("click", () => {
+      audios[i].muted = !audios[i].muted;
+      if (audios[i].muted == true){
+        mute[i].innerHTML = '<span class="material-symbols-outlined">volume_off</span>';
+      } else {
+        mute[i].innerHTML = '<span class="material-symbols-outlined"> volume_up </span>';
+      }
+    })
 }
-
-

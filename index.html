@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- link to the play icon-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+        <!-- link to unmute icon-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- link to mute icon -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         
         <!-- Title of the page -->
@@ -39,9 +42,12 @@
                     </span>
 
                     <span class="sound-input">
-                        <span class="material-symbols-outlined">
-                            volume_up
-                        </span>
+                        <button class="mute">
+                            <span class="material-symbols-outlined">
+                                volume_up
+                            </span>
+                        </button>
+
                         <input type="range" min="0" max="1" step="0.01" class="volume-slider"
                         id="volume-waves">
                         <audio class= "audio" id="play-waves" loop src="oceanWaves.mp3"></audio>
@@ -56,9 +62,11 @@
                     </span>
 
                     <span class="sound-input">
-                        <span class="material-symbols-outlined">
-                            volume_up
-                        </span>
+                        <button class="mute">
+                            <span class="material-symbols-outlined">
+                                volume_up
+                            </span>
+                        </button>
                         <input type="range" min="0" max="1" step="0.01" class="volume-slider"
                         id="volume-wind">
                         <audio class= "audio" id="play-wind" loop src="Wind.mp3"></audio>
@@ -73,9 +81,11 @@
                     </span>
 
                     <span class="sound-input"> 
-                        <span class="material-symbols-outlined">
-                            volume_up
-                        </span>
+                        <button class="mute">
+                            <span class="material-symbols-outlined">
+                                volume_up
+                            </span>
+                        </button>
                         <input type="range" min="0" max="1" step="0.01" class="volume-slider"
                         id="volume-seagull">
                         <audio class= "audio" id="play-seagull" loop src="seagulls.mp3"></audio>
@@ -90,9 +100,11 @@
                     </span>
                     
                     <span class="sound-input">
-                        <span class="material-symbols-outlined">
-                            volume_up
-                        </span>
+                        <button class="mute">
+                            <span class="material-symbols-outlined">
+                                volume_up
+                            </span>
+                        </button>
                         <input type="range" min="0" max="1" step="0.01" class="volume-slider"
                         id="volume-people">
                         <audio class= "audio" id="play-people" loop src="children-playing.mp3"></audio>
