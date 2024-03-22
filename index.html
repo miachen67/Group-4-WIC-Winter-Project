@@ -14,6 +14,7 @@
         
         <!-- Link to external stylesheet -->
         <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
     </head>
 
     <body>
@@ -23,55 +24,53 @@
 
         </header>
         <div class="soundSection">
-            <div>
                 <!-- Image of the beach PLACEHOLDER (feel free to modify it)
                 <figure>
                     <img src="beach.jpeg" alt="A picture of a beach" width="500">
                     <figcaption>Immerse yourself in relaxation.</figcaption>
                 </figure> -->
 
-                <!--
-                <span>
-                    <h4>Waves</h4>
-                    <button type="button">
-                        <span class="material-symbols-outlined">play_arrow
-                        </span>
-                    </button>
-                </span> 
+                <!--Waves-->
+                <h4 class="sound-headers">Waves</h4>
 
-                <span>
-                    <input type="range" min="1" max="100" value="50" step="1">
-                </span> -->
-                <h4>Waves</h4>
-                <audio controls loop>
-                    <source src="oceanWaves.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
+                <span class="sound-input">
+                <button id="button-waves" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-waves">
+                <audio class= "audio" id="play-waves" loop src="oceanWaves.mp3"></audio>
+                </span>
                 
-                <!-- Audio for the wind sound effect -->
-                <h4>Wind</h4>
-                <audio controls loop>
-                    <source src="Wind.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
+                <!--Wind-->
+                <h4 class="sound-headers">Wind</h4>
 
-                <!-- Audio for the seagull sound effect -->
-                <h4>Seagulls</h4>
-                <audio controls loop>
-                    <source src="seagulls.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
+                <span class="sound-input">
+                <button id="button-wind" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-wind">
+                <audio class= "audio" id="play-wind" loop src="Wind.mp3"></audio>
+                </span>
 
-                <!-- Audio for the children sound effect -->
-                <h4>Talking/Playing</h4>
-                <audio controls loop>
-                    <source src="children-playing.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-                
-            </div>
+                <!--Seagull-->
+                <h4 class="sound-headers">Seagulls</h4>
+
+                <span class="sound-input">
+                <button id="button-seagull" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-seagull">
+                <audio class= "audio" id="play-seagull" loop src="seagulls.mp3"></audio>
+                </span>
+
+                <!--People-->
+                <h4 class="sound-headers">Talking/Playing</h4>
+
+                <span class="sound-input">
+                <button id="button-people" class="pausePlayButton">&#9658;</button>
+                <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                id="volume-people">
+                <audio class= "audio" id="play-people" loop src="children-playing.mp3"></audio>
+                </span>
         </div>
 
-
+        <script src="script.js"></script>
     </body>
 </html>

@@ -1,13 +1,43 @@
 body {
-    margin: 0;
     background: url("beach.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
 }
 
-audio {
-    opacity: 60%;
-    width: 15%;
+header {
+    text-align: center;
+    font-family: 'Gaegu';
+    font-size: large;
+}
+
+.sound-headers {
+    position: relative;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Gaegu';
+}
+
+.volume-slider{
+    -webkit-appearance: none;
+    width: 150px;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+    margin: 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.sound-input {
+    text-align: right;
 }
