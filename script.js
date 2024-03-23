@@ -8,13 +8,10 @@ const mute = document.getElementsByClassName("mute");
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", () => {
-      // Check if audio is paused
       if (audios[i].paused) {
-        // If paused, play audio and change button text to "Pause"
         audios[i].play();
         buttons[i].innerHTML = pauseSymbol;
       } else {
-        // If playing, pause audio and change button text to "Play"
         audios[i].pause();
         buttons[i].innerHTML = playSymbol;
       }
