@@ -26,8 +26,10 @@ for (let i = 0; i < buttons.length; i++) {
       audios[i].muted = !audios[i].muted;
       if (audios[i].muted == true){
         mute[i].innerHTML = '<span class="material-symbols-outlined">volume_off</span>';
+        volumes[i].value = 0;
       } else {
         mute[i].innerHTML = '<span class="material-symbols-outlined"> volume_up </span>';
+        volumes[i].value = audios[i].volume;
       }
     })
 }
