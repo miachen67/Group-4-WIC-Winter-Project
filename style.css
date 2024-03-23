@@ -18,6 +18,11 @@ button{
     cursor: pointer;
 }
 
+.wrapper{
+    display: flex;
+    gap: 10vw;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,

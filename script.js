@@ -34,3 +34,17 @@ for (let i = 0; i < buttons.length; i++) {
       }
     })
 }
+
+const taskInput = document.querySelector("#addTask");
+let taskList = document.querySelector("#taskList");
+
+function addTask(){
+  const taskInputValue = taskInput.value;
+  if (taskInputValue === ''){
+    alert('Enter a task!');
+  } else {
+    let li = document.createElement("li");
+    li.textContent = taskInputValue;
+    taskList.appendChild(li);
+  }
+}
