@@ -41,7 +41,29 @@ function addTask(){
     alert('Enter a task!');
   } else {
     let li = document.createElement("li");
-    li.textContent = taskInputValue;
+    let checkAndTask = document.createElement("span");
+    let task = document.createElement("p");
+    let check = document.createElement("input");
+
+    task.style.display = "inline-block";
+    check.style.display = "inline-block";
+    task.style.paddingLeft = "8px";
+
+    check.type = "checkbox";
+    check.style.border = "none";
+    task.textContent = taskInputValue;
+    checkAndTask.appendChild(check);
+    checkAndTask.appendChild(task);
+    li.appendChild(checkAndTask);
     taskList.appendChild(li);
+
+    // Add event listener to the newly created checkbox
+    check.addEventListener("click", function() {
+      if (check.checked) {
+        // Remove the parent li element of the checked checkbox
+        setTimeout(function(){taskList.removeChild(li)}, 700);
+      }
+    });
   }
 }
+

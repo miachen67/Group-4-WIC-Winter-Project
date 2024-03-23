@@ -4,10 +4,15 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: #271604;
 }
 
 h1{
-    font-size: 5vw
+    font-size: 5vw;
+}
+
+h3{
+    font-size: 28px;
 }
 
 header {
@@ -84,4 +89,35 @@ button{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.todo{
+    font-family: 'Gaegu';
+    max-width: 30vw;
+}
+
+#addTask{
+    font-family: "Lato", sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fffefd;
+}
+
+#addTaskButton{
+    font-family: "Lato", sans-serif;
+    background-color: #271604;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#taskList{
+    font-family: "Lato", sans-serif;
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #fffefd;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 14px;
 }
