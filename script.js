@@ -31,3 +31,39 @@ for (let i = 0; i < buttons.length; i++) {
       }
     })
 }
+
+const taskInput = document.querySelector("#addTask");
+let taskList = document.querySelector("#taskList");
+
+function addTask(){
+  const taskInputValue = taskInput.value;
+  if (taskInputValue === ''){
+    alert('Enter a task!');
+  } else {
+    let li = document.createElement("li");
+    let checkAndTask = document.createElement("span");
+    let task = document.createElement("p");
+    let check = document.createElement("input");
+
+    task.style.display = "inline-block";
+    check.style.display = "inline-block";
+    task.style.paddingLeft = "8px";
+
+    check.type = "checkbox";
+    check.style.border = "none";
+    task.textContent = taskInputValue;
+    checkAndTask.appendChild(check);
+    checkAndTask.appendChild(task);
+    li.appendChild(checkAndTask);
+    taskList.appendChild(li);
+
+    // Add event listener to the newly created checkbox
+    check.addEventListener("click", function() {
+      if (check.checked) {
+        // Remove the parent li element of the checked checkbox
+        setTimeout(function(){taskList.removeChild(li)}, 700);
+      }
+    });
+  }
+}
+

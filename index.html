@@ -12,7 +12,11 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <!-- link to mute icon -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        
+        <!-- link to Lato font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
         <!-- Title of the page -->
         <title>I Miss The Beach</title>
         
@@ -28,97 +32,108 @@
             <h2>sit back, relax, and enjoy the waves :)</h2>
 
         </header>
-        <div class="spotify">
+        <div class="wrapper">
+            <div class="spotify">
 
-        </div>
-        <div class="todo">
-            
-        </div>
-        <div class="soundSection">
-                <!-- Image of the beach PLACEHOLDER (feel free to modify it)
-                <figure>
-                    <img src="beach.jpeg" alt="A picture of a beach" width="500">
-                    <figcaption>Immerse yourself in relaxation.</figcaption>
-                </figure> -->
-
-                <!--Waves-->
-                <div class="waves">
-                    <span class = "playPause">
-                        <h4 class="sound-headers">Waves</h4>
-                        <button id="button-waves" class="pausePlayButton">&#9658;</button>
-                    </span>
-
-                    <span class="sound-input">
-                        <button class="mute">
-                            <span class="material-symbols-outlined">
-                                volume_up
-                            </span>
-                        </button>
-
-                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                        id="volume-waves">
-                        <audio class= "audio" id="play-waves" loop src="oceanWaves.mp3"></audio>
-                    </span>
-                </div>
-                
-                <!--Wind-->
-                <div class="wind">
-                    <span class="playPause">
-                        <h4 class="sound-headers">Wind</h4>
-                        <button id="button-wind" class="pausePlayButton">&#9658;</button>
-                    </span>
-
-                    <span class="sound-input">
-                        <button class="mute">
-                            <span class="material-symbols-outlined">
-                                volume_up
-                            </span>
-                        </button>
-                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                        id="volume-wind">
-                        <audio class= "audio" id="play-wind" loop src="Wind.mp3"></audio>
-                    </span>
-                </div>
-                
-                <!--Seagull-->
-                <div class="seagulls">
-                    <span class="playPause">
-                        <h4 class="sound-headers">Seagulls</h4>
-                        <button id="button-seagull" class="pausePlayButton">&#9658;</button>
-                    </span>
-
-                    <span class="sound-input"> 
-                        <button class="mute">
-                            <span class="material-symbols-outlined">
-                                volume_up
-                            </span>
-                        </button>
-                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                        id="volume-seagull">
-                        <audio class= "audio" id="play-seagull" loop src="seagulls.mp3"></audio>
-                    </span>
-                </div>
-                
-                <!--People-->
-                <div class="people">
-                    <span class="playPause">
-                        <h4 class="sound-headers">Voices</h4>
-                        <button id="button-people" class="pausePlayButton">&#9658;</button>
-                    </span>
+            </div>
+            <!--To Do List-->
+            <div class="todo">
+                <h3>To-Do List</h3>
+                <!-- Add a new task -->
+                <span>
+                    <input type="text" placeholder="Add a new task" id="addTask">
+                    <button onclick="addTask()" id="addTaskButton">+</button>
+                </span>
+                <!-- List of tasks -->
+                <ul id="taskList">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="soundSection">
+                    <!-- Image of the beach PLACEHOLDER (feel free to modify it)
+                    <figure>
+                        <img src="beach.jpeg" alt="A picture of a beach" width="500">
+                        <figcaption>Immerse yourself in relaxation.</figcaption>
+                    </figure> -->
+    
+                    <!--Waves-->
+                    <div class="waves">
+                        <span class = "playPause">
+                            <h4 class="sound-headers">Waves</h4>
+                            <button id="button-waves" class="pausePlayButton">&#9658;</button>
+                        </span>
+    
+                        <span class="sound-input">
+                            <button class="mute">
+                                <span class="material-symbols-outlined">
+                                    volume_up
+                                </span>
+                            </button>
+    
+                            <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                            id="volume-waves">
+                            <audio class= "audio" id="play-waves" loop src="oceanWaves.mp3"></audio>
+                        </span>
+                    </div>
                     
-                    <span class="sound-input">
-                        <button class="mute">
-                            <span class="material-symbols-outlined">
-                                volume_up
-                            </span>
-                        </button>
-                        <input type="range" min="0" max="1" step="0.01" class="volume-slider"
-                        id="volume-people">
-                        <audio class= "audio" id="play-people" loop src="children-playing.mp3"></audio>
-                    </span>
-                </div>
+                    <!--Wind-->
+                    <div class="wind">
+                        <span class="playPause">
+                            <h4 class="sound-headers">Wind</h4>
+                            <button id="button-wind" class="pausePlayButton">&#9658;</button>
+                        </span>
+    
+                        <span class="sound-input">
+                            <button class="mute">
+                                <span class="material-symbols-outlined">
+                                    volume_up
+                                </span>
+                            </button>
+                            <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                            id="volume-wind">
+                            <audio class= "audio" id="play-wind" loop src="Wind.mp3"></audio>
+                        </span>
+                    </div>
+                    
+                    <!--Seagull-->
+                    <div class="seagulls">
+                        <span class="playPause">
+                            <h4 class="sound-headers">Seagulls</h4>
+                            <button id="button-seagull" class="pausePlayButton">&#9658;</button>
+                        </span>
+    
+                        <span class="sound-input"> 
+                            <button class="mute">
+                                <span class="material-symbols-outlined">
+                                    volume_up
+                                </span>
+                            </button>
+                            <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                            id="volume-seagull">
+                            <audio class= "audio" id="play-seagull" loop src="seagulls.mp3"></audio>
+                        </span>
+                    </div>
+                    
+                    <!--People-->
+                    <div class="people">
+                        <span class="playPause">
+                            <h4 class="sound-headers">Voices</h4>
+                            <button id="button-people" class="pausePlayButton">&#9658;</button>
+                        </span>
+                        
+                        <span class="sound-input">
+                            <button class="mute">
+                                <span class="material-symbols-outlined">
+                                    volume_up
+                                </span>
+                            </button>
+                            <input type="range" min="0" max="1" step="0.01" class="volume-slider"
+                            id="volume-people">
+                            <audio class= "audio" id="play-people" loop src="children-playing.mp3"></audio>
+                        </span>
+                    </div>
+            </div>
         </div>
-
         <script src="script.js"></script>
     </body>
 </html>
