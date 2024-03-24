@@ -4,11 +4,12 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #271604;
+    color: #271604;  
 }
 
 h1{
     font-size: 5vw;
+    margin:0
 }
 
 h3{
@@ -30,6 +31,7 @@ button{
 .wrapper{
     display: flex;
     gap: 10vw;
+    justify-content: space-between;
 }
 
 .material-symbols-outlined {
@@ -96,12 +98,16 @@ button{
     max-width: 30vw;
 }
 
+.spotify {
+    margin: 30px;
+}
+
 #addTask{
-    font-family: "Lato", sans-serif;
+    font-family: 'gaegu';
     border: none;
     border-radius: 5px;
     padding: 5px;
-    background-color: #fffefd;
+    background-color: #fffefdbc;
 }
 
 #addTaskButton{
@@ -109,15 +115,15 @@ button{
     background-color: #271604;
     color: white;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #taskList{
-    font-family: "Lato", sans-serif;
+    font-family: 'gaegu';
     list-style-type: none;
     padding-left: 0;
-    background-color: #fffefd;
+    background-color: #fffefdbc;
     border-radius: 8px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 18px;
 }
